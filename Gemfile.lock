@@ -41,11 +41,8 @@ GEM
     addressable (2.5.0)
       public_suffix (~> 2.0, >= 2.0.2)
     arel (7.1.4)
-<<<<<<< HEAD
-=======
     autoprefixer-rails (6.7.5)
       execjs
->>>>>>> styling
     builder (3.2.3)
     byebug (9.0.6)
     capybara (2.12.1)
@@ -255,6 +252,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  autoprefixer-rails
   byebug
   capybara (= 2.12.1)
   codeclimate-test-reporter (~> 1.0.0)

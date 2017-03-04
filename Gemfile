@@ -20,6 +20,8 @@ gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.2'
 # Google MDL Sass in a gem
 gem 'material_design_lite-sass'
+# dependency of material_design_lite-sass
+gem 'autoprefixer-rails'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 

@@ -10,17 +10,12 @@
 // Read Sprockets README (https://github.com/rails/sprockets#sprockets-directives) for details
 // about supported directives.
 //
+//= require material
 //= require jquery
 //= require jquery_ujs
-<<<<<<< HEAD
-//= require turbolinks
-//= require_tree .
-=======
-//= require material
 //= require turbolinks
 //= require_tree .
 
 document.addEventListener('turbolinks:load', function() {
   componentHandler.upgradeDom();
 });
->>>>>>> styling
