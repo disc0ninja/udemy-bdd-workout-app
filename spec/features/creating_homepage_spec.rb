@@ -7,8 +7,10 @@ RSpec.feature "Home Page" do
 
     # check for link called Home
     expect(page).to have_link "nav-bar-home"
+    expect(page).to have_link "nav-drawer-home"
     # check for link called athletes den
-    expect(page).to have_link "Athletes Den"
+    expect(page).to have_link "nav-bar-athletes-den"
+    expect(page).to have_link "nav-drawer-athletes-den"
     # check for content 'Workout Lounge'
     expect(page).to have_content("Workout Lounge")
     # check for content 'Share your workout with friends and family'
