@@ -1,24 +1,27 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+[![Code Climate](https://codeclimate.com/github/disc0ninja/udemy-bdd-workout-app/badges/gpa.svg)](https://codeclimate.com/github/disc0ninja/udemy-bdd-workout-app)
+[![Test Coverage](https://codeclimate.com/github/disc0ninja/udemy-bdd-workout-app/badges/coverage.svg)](https://codeclimate.com/github/disc0ninja/udemy-bdd-workout-app/coverage)
+### About
+This application is a workout social application that I built along with the
+**Udemy Course Rails 5 BDD with Rspec and Capybara**
 
-Things you may want to cover:
+I've also integrated the repository with code climate to leverage their code climate, and test reporter resources.
 
-* Ruby version
+This was built as a learning experience to help me improve my rails development
+workflow.
 
-* System dependencies
+* Ruby version  
+  * ruby 2.4.0p0
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* How to run the test suite      
+  * Install Gems  
+  ``` ruby
+  bundle install
+  ```  
+  * Run All Tests with command:  
+  ``` ruby
+  rspec
+  ```    
+##### License  
+[GNU General Public License Version 3](https://opensource.org/licenses/GPL-3.0)
