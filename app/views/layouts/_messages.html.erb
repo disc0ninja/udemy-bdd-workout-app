@@ -1,0 +1,20 @@
+<% flash.each do |key, message| %>
+    <div class="mdl-cell mdl-cell--2-offset-desktop mdl-cell--8-col-desktop
+          mdl-cell--1-offset-tablet mdl-cell--6-col-tablet
+          mdl-cell--4-col-phone
+          mdl-card mdl-shadow--3dp alert alert-<%= key %>">
+      <div class="mdl-card__title alert-<%= key %>-title">
+        <h4 class="center-block"><%= key.capitalize %></h4>
+      </div>
+      <div class="mld-card__supporting-text center-block">
+        <p>
+          <%= message.capitalize %>
+        </p>
+      </div>
+      <div class="mdl-card__menu">
+        <a href="#"class="close mdl-button mdl-js-button mdl-button--fab mdl-button--colored-<%= key %> mdl-js-ripple-effect" data-dismiss="alert">
+          <i class="material-icons">clear</i>
+        </a>
+      </div>
+    </div>
+<% end %>
