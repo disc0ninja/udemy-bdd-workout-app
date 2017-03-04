@@ -1,22 +1,16 @@
 {
   "RSpec": {
     "coverage": {
-      "/home/disc0ninja/Documents/Udemy/rails/workout-app/spec/features/creating_homepage_spec.rb": [
+      "/home/disc0ninja/Documents/Udemy/rails/workout-app/spec/controllers/dashboards_controller_spec.rb": [
         1,
         null,
         1,
         null,
         1,
         1,
+        1,
+        1,
         null,
-        null,
-        0,
-        null,
-        0,
-        null,
-        0,
-        null,
-        0,
         null,
         null,
         null
@@ -286,14 +280,76 @@
       ],
       "/home/disc0ninja/Documents/Udemy/rails/workout-app/config/routes.rb": [
         1,
+        1,
         null,
+        null,
+        1,
         null
       ],
       "/home/disc0ninja/Documents/Udemy/rails/workout-app/app/helpers/application_helper.rb": [
         1,
         null
+      ],
+      "/home/disc0ninja/Documents/Udemy/rails/workout-app/app/helpers/dashboards_helper.rb": [
+        1,
+        null
+      ],
+      "/home/disc0ninja/Documents/Udemy/rails/workout-app/app/controllers/dashboards_controller.rb": [
+        1,
+        1,
+        null,
+        null
+      ],
+      "/home/disc0ninja/Documents/Udemy/rails/workout-app/app/controllers/application_controller.rb": [
+        1,
+        1,
+        null
+      ],
+      "/home/disc0ninja/Documents/Udemy/rails/workout-app/spec/features/creating_homepage_spec.rb": [
+        1,
+        null,
+        1,
+        null,
+        1,
+        1,
+        null,
+        null,
+        1,
+        null,
+        1,
+        null,
+        1,
+        null,
+        1,
+        null,
+        null,
+        null
+      ],
+      "/home/disc0ninja/Documents/Udemy/rails/workout-app/spec/helpers/dashboards_helper_spec.rb": [
+        1,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        1,
+        1,
+        null
+      ],
+      "/home/disc0ninja/Documents/Udemy/rails/workout-app/spec/views/dashboards/index.html.erb_spec.rb": [
+        1,
+        null,
+        1,
+        1,
+        null
       ]
     },
-    "timestamp": 1488596188
+    "timestamp": 1488598195
   }
 }
