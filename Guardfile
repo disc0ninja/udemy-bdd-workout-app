@@ -91,8 +91,8 @@ guard :rspec, cmd: "bin/rspec" do
   watch(rails.app_controller)  { "#{rspec.spec_dir}/controllers" }
 
   # Capybara features specs
-  watch(rails.view_dirs)     { |m| rspec.spec.call("features/#{m[1]}") }
-  watch(rails.layouts)       { |m| rspec.spec.call("features/#{m[1]}") }
+  watch(rails.view_dirs)       { |m| "spec/features/" }
+  watch(rails.layouts)         { |m| "spec/features/" }
 
   # Turnip features and steps
   watch(%r{^spec/acceptance/(.+)\.feature$})

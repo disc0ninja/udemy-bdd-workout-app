@@ -11,6 +11,9 @@ RSpec.feature "Home Page" do
     expect(page).to have_link "nav-bar-register"
     expect(page).to have_link "nav-drawer-register"
 
+    expect(page).to have_link "nav-bar-login"
+    expect(page).to have_link "nav-drawer-login"
+
     expect(page).to have_link "nav-bar-athletes-den"
     expect(page).to have_link "nav-drawer-athletes-den"
 

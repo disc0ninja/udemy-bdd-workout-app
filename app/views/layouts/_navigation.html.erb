@@ -13,6 +13,8 @@
         <% unless user_signed_in? %>
           <%= link_to "Register", new_user_registration_path, id: "nav-bar-register",
           class: "mdl-navigation__link" %>
+          <%= link_to "Login", new_user_session_path, id: "nav-bar-login",
+          class: "mdl-navigation__link" %>
         <% else %>
 
         <% end %>
@@ -28,6 +30,8 @@
       <%= link_to "Athletes Den", root_path, id: "nav-drawer-athletes-den", class: "mdl-navigation__link" %>
       <% unless user_signed_in? %>
         <%= link_to "Register", new_user_registration_path, id: "nav-drawer-register",
+        class: "mdl-navigation__link" %>
+        <%= link_to "Login", new_user_session_path, id: "nav-drawer-login",
         class: "mdl-navigation__link" %>
       <% else %>
 
