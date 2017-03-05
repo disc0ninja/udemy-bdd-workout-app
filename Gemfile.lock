@@ -75,6 +75,8 @@ GEM
     cucumber-core (1.5.0)
       gherkin (~> 4.0)
     cucumber-wire (0.0.1)
+    d3-rails (4.1.0)
+      railties (>= 3.1)
     debug_inspector (0.0.2)
     devise (4.2.0)
       bcrypt (~> 3.0)
@@ -268,6 +270,7 @@ DEPENDENCIES
   capybara (= 2.12.1)
   codeclimate-test-reporter (~> 1.0.0)
   coffee-rails (~> 4.2)
+  d3-rails (= 4.1.0)
   devise
   guard
   guard-cucumber

@@ -35,7 +35,12 @@ gem 'jbuilder', '~> 2.5'
 # gem 'redis', '~> 3.0'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
+
+# used for datepicker to help format dates
 gem 'jquery-ui-rails', '5.0.5'
+
+# used to help visualize ecercise database
+gem 'd3-rails', '4.1.0'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
