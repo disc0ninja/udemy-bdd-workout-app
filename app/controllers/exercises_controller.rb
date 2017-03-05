@@ -2,6 +2,7 @@ class ExercisesController < ApplicationController
   before_action :set_user
 
   def index
+    @exercises = @user.exercises
   end
 
   def new

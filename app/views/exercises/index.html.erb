@@ -1,1 +1,34 @@
-<%= link_to "New Exercise", new_user_exercise_path(current_user) %>
+<div class="mdl-grid">
+  <%= link_to "New Exercise", new_user_exercise_path(current_user), class: "
+  mdl-cell mdl-cell--4-col-desktop mdl-cell--4-offset-desktop mdl-cell--2-offset-tablet
+  mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" %>
+</div>
+
+<div class="mdl-grid">
+  <% unless @exercises.empty? %>
+    <% @exercises.each do |exercise| %>
+      <div class="mdl-cell mdl-cell--4-col mdl-card mdl-shadow--3dp">
+        <div class="mdl-card__title">
+          <h5 class="mdl-card__title-text">
+            <%= exercise.workout %>
+          </h5>
+        </div>
+        <div class="mdl-card__supporting-text">
+          Duration (Min): <%= exercise.duration_in_min %><br />
+          Activity Date: <%= exercise.workout_date %>
+        </div>
+      </div>
+    <% end %>
+  <% else %>
+    <div class="mdl-cell mdl-cell--4-col mdl-cell--4-offset-desktop mdl-cell--2-offset-tablet mdl-card mdl-shadow--3dp">
+      <div class="mdl-card__title">
+        <h3 class="mdl-card__title-text">No Exercises Created Yet</h3>
+      </div>
+      <div class="mdl-card__supporting-text">
+        <%= link_to "Create New Exercise", new_user_exercise_path(@user), class: "
+        mdl-cell mdl-cell--4-col-desktop mdl-cell--4-offset-desktop mdl-cell--2-offset-tablet
+        mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" %>
+      </div>
+    </div>
+  <% end %>
+</div>
