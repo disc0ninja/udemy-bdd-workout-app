@@ -11,6 +11,7 @@
         <%= link_to "Home", root_path, id: "nav-bar-home", class: "mdl-navigation__link" %>
         <%= link_to "Athletes Den", root_path, id: "nav-bar-athletes-den", class: "mdl-navigation__link" %>
         <% if user_signed_in? %>
+          <%= link_to "My Lounge", user_exercises_path(current_user), id: "nav-bar-lounge", class: "mdl-navigation__link" %>
           <%= link_to "Logout", destroy_user_session_path, method: :delete, id:"nav-bar-logout", class: "mdl-navigation__link" %>
         <% else %>
           <%= link_to "Register", new_user_registration_path, id: "nav-bar-register",
@@ -29,6 +30,7 @@
       <%= link_to "Home", root_path, id: "nav-drawer-home", class: "mdl-navigation__link" %>
       <%= link_to "Athletes Den", root_path, id: "nav-drawer-athletes-den", class: "mdl-navigation__link" %>
       <% if user_signed_in? %>
+        <%= link_to "My Lounge", user_exercises_path(current_user), id: "nav-drawer-lounge", class: "mdl-navigation__link" %>
         <%= link_to "Logout", destroy_user_session_path, method: :delete, id:"nav-drawer-logout", class: "mdl-navigation__link" %>
       <% else %>
         <%= link_to "Register", new_user_registration_path, id: "nav-drawer-register",

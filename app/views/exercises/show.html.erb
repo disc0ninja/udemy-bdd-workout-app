@@ -1,0 +1,20 @@
+<div class="mdl-grid">
+  <div class="mdl-card mdl-shadow--3dp mdl-cell
+    mdl-cell--2-offset-desktop mdl-cell--8-col-desktop
+    mdl-cell--1-offset-tablet mdl-cell--6-col-tablet
+    mdl-cell--6-col-phone">
+    <div class="mdl-card__title">
+      <h1><%= @exercise.duration_in_min %></h1>
+    </div>
+    <div class="mdl-card__supporting-text">
+        <p>
+          <%= @exercise.workout %>
+        </p><br />
+        <p>
+          <%= @exercise.workout_date %>
+        </p>
+        <small>Created by <%= User.find_by_id(@exercise.user_id).email %></small>
+
+    </div>
+  </div>
+</div>

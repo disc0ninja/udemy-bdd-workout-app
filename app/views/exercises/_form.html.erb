@@ -1,0 +1,46 @@
+<div class="mdl-grid">
+  <div class="mdl-cell mdl-cell--2-offset-desktop mdl-cell--8-col-desktop
+    mdl-cell--1-offset-tablet mdl-cell--6-col-tablet
+    mdl-cell--6-col-phone ">
+    <h3 class="center-block">Add New Exercise</h3>
+  </div>
+</div>
+
+<%= form_for([current_user, @exercise], :html => {role: "form"}) do |f| %>
+  <% if @exercise.errors.any? %>
+    <%= render "articles/article_errors" %>
+  <% end %>
+  <div class="mdl-grid">
+
+    <div class="mdl-cell mdl-cell--2-offset-desktop mdl-cell--8-col-desktop
+      mdl-cell--1-offset-tablet mdl-cell--6-col-tablet
+      mdl-cell--6-col-phone
+      mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+        <%= f.number_field :duration_in_min, id: "duration-in-minutes", class: "mdl-textfield__input", autofocus: true %>
+        <%= f.label :duration_in_min, class: "mdl-textfield__label", for: "duration-in-minutes" %>
+    </div>
+  </div>
+  <div class="mdl-grid">
+    <div class="mdl-cell mdl-cell--2-offset-desktop mdl-cell--8-col-desktop
+      mdl-cell--1-offset-tablet mdl-cell--6-col-tablet
+      mdl-cell--6-col-phone mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+        <%= f.text_area :workout, id: "workout-details", class: "mdl-textfield__input", rows: 10 %>
+        <%= f.label :workout, class: "mdl-textfield__label", for: "workout-details" %>
+    </div>
+  </div>
+  <div class="mdl-grid">
+    <div class="mdl-cell mdl-cell--2-offset-desktop mdl-cell--8-col-desktop
+      mdl-cell--1-offset-tablet mdl-cell--6-col-tablet
+      mdl-cell--6-col-phone mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+        <%= f.date_field :workout_date, id: "workout-date", class: "mdl-textfield__input", rows: 10 %>
+        <%= f.label :workout_date, class: "mdl-textfield__label", for: "workout-date" %>
+    </div>
+  </div>
+  <div class="mdl-grid">
+    <%= f.submit class: "mdl-button mdl-js-button mdl-button--raised
+        mdl-button-colored mdl-js-ripple-effect mdl-cell
+        mdl-cell--4-col-desktop mdl-cell--4-offset-desktop
+        mdl-cell--2-offset-tablet mdl-cell--4-col-tablet
+        mdl-cell--4-col-phone" %>
+  </div>
+<% end %>
