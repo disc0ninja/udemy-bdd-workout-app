@@ -16,8 +16,8 @@ class ExercisesController < ApplicationController
       flash[:success] = "Exercise has been created successfully"
       redirect_to user_exercise_path(current_user, @exercise)
     else
-      flash[:danger] = "Exercise could not be saved"
-      redirect_to new_user_exercise_path(@user)
+      flash.now[:danger] = "Exercise could not be saved"
+      render :new
     end
 
   end

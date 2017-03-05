@@ -8,7 +8,7 @@
 
 <%= form_for([current_user, @exercise], :html => {role: "form"}) do |f| %>
   <% if @exercise.errors.any? %>
-    <%= render "articles/article_errors" %>
+    <%= render "exercises/errors" %>
   <% end %>
   <div class="mdl-grid">
 
