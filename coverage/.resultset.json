@@ -1287,6 +1287,7 @@
       "/home/disc0ninja/Documents/Udemy/rails/workout-app/app/controllers/exercises_controller.rb": [
         1,
         1,
+        1,
         null,
         1,
         12,
@@ -1309,22 +1310,22 @@
         null,
         null,
         1,
-        4,
-        null,
-        null,
-        1,
-        4,
-        4,
-        2,
-        2,
-        null,
-        2,
-        2,
         null,
         null,
         null,
         1,
+        null,
         4,
+        2,
+        2,
+        null,
+        2,
+        2,
+        null,
+        null,
+        null,
+        1,
+        null,
         null,
         null,
         1,
@@ -1335,6 +1336,10 @@
         null,
         1,
         32,
+        null,
+        null,
+        1,
+        12,
         null,
         null,
         null
@@ -1351,6 +1356,6 @@
         null
       ]
     },
-    "timestamp": 1488758640
+    "timestamp": 1488758826
   }
 }

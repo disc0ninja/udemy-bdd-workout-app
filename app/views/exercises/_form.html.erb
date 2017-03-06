@@ -6,7 +6,7 @@
   </div>
 </div>
 
-<%= form_for([current_user, @exercise], :html => {role: "form"}) do |f| %>
+<%= form_for([@user, @exercise], :html => {role: "form"}) do |f| %>
   <% if @exercise.errors.any? %>
     <%= render "exercises/errors" %>
   <% end %>

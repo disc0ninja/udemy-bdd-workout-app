@@ -1,12 +1,13 @@
 class ExercisesController < ApplicationController
   before_action :set_user
+  before_action :set_exercise, only: [:edit, :update, :show]
 
   def index
     @exercises = @user.exercises
   end
 
   def new
-    @exercise = current_user.exercises.new
+    @exercise = @user.exercises.new
   end
 
   def create
@@ -22,11 +23,10 @@ class ExercisesController < ApplicationController
   end
 
   def edit
-    @exercise = @user.exercises.find(params[:id])
   end
 
   def update
-    @exercise = @user.exercises.find(params[:id])
+
     if @exercise.update(exercise_params)
       flash[:success] = "Exercise has been updated"
       redirect_to [@user, @exercise]
@@ -37,7 +37,6 @@ class ExercisesController < ApplicationController
   end
 
   def show
-    @exercise = @user.exercises.find(params[:id])
   end
 
   private
@@ -48,6 +47,10 @@ class ExercisesController < ApplicationController
 
   def set_user
     @user = current_user
+  end
+
+  def set_exercise
+    @exercise = @user.exercises.find(params[:id])
   end
 
 end
