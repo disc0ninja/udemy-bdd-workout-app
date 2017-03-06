@@ -13,7 +13,7 @@ RSpec.feature "Listing Exercises" do
     @exercise_3 = @john.exercises.create(duration_in_min: 40, workout: "Leg Press", workout_date: 8.days.ago)
   end
 
-  scenario "show's user's workout for last 7 days" do
+  scenario "show's user's workout for last 7 days (nav-bar)" do
     visit "/"
 
     click_link "nav-bar-lounge"
@@ -31,12 +31,49 @@ RSpec.feature "Listing Exercises" do
     expect(page).not_to have_content(@exercise_3.workout_date)
   end
 
-  scenario "shows no exercies if none exist" do
+  scenario "shows no exercies if none exist (nav-bar)" do
     @john.exercises.delete_all
 
     visit "/"
 
     click_link "nav-bar-lounge"
+
+    expect(page).to have_content("No Exercises Created Yet")
+    expect(page).to have_link("Create New Exercise")
+
+    expect(page).not_to have_content(@exercise_1.duration_in_min)
+    expect(page).not_to have_content(@exercise_1.workout)
+    expect(page).not_to have_content(@exercise_1.workout_date)
+
+    expect(page).not_to have_content(@exercise_2.duration_in_min)
+    expect(page).not_to have_content(@exercise_2.workout)
+    expect(page).not_to have_content(@exercise_2.workout_date)
+  end
+
+  scenario "show's user's workout for last 7 days (nav-drawer)" do
+    visit "/"
+
+    click_link "nav-drawer-lounge"
+
+    expect(page).to have_content(@exercise_1.duration_in_min)
+    expect(page).to have_content(@exercise_1.workout)
+    expect(page).to have_content(@exercise_1.workout_date)
+
+    expect(page).to have_content(@exercise_2.duration_in_min)
+    expect(page).to have_content(@exercise_2.workout)
+    expect(page).to have_content(@exercise_2.workout_date)
+
+    expect(page).not_to have_content(@exercise_3.duration_in_min)
+    expect(page).not_to have_content(@exercise_3.workout)
+    expect(page).not_to have_content(@exercise_3.workout_date)
+  end
+
+  scenario "shows no exercies if none exist (nav-drawer)" do
+    @john.exercises.delete_all
+
+    visit "/"
+
+    click_link "nav-drawer-lounge"
 
     expect(page).to have_content("No Exercises Created Yet")
     expect(page).to have_link("Create New Exercise")
