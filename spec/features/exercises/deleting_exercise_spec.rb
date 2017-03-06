@@ -9,15 +9,23 @@ RSpec.feature "Delete an exercise" do
     login_as(@john)
   end
 
-  scenario do
+  scenario "nav-bar-nav" do
     visit "/"
 
     click_link "nav-bar-lounge"
 
-    path = "/users/#{@john.id}/exercises/#{@exercise.id}"
-    link = "//a[contains(@href,\'#{path}\') and .//text()='Destroy']"
+    click_link "#{@exercise.id}-delete"
 
-    find(:xpath, link).click_link
+    expect(page).to have_content("Exercise has been deleted")
+
+  end
+
+  scenario "nav-drawer-nav" do
+    visit "/"
+
+    click_link "nav-drawer-lounge"
+
+    click_link "#{@exercise.id}-delete"
 
     expect(page).to have_content("Exercise has been deleted")
 

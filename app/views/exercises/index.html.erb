@@ -20,6 +20,9 @@
         <div class="mdl-card__actions">
           <%= link_to "Edit", edit_user_exercise_path(@user, exercise), class: "
           mdl-button mdl-button--raised mdl-js-button mdl-js-ripple-effect" %>
+          <%= link_to "Delete", user_exercise_path(@user, exercise), id: "#{exercise.id}-delete", class: "mdl-button mdl-button--raised mdl-js-button mdl-js-ripple-effect", method: :delete,
+          data: { confirm: "Are you sure you want to delete exercise?" }
+           %>
         </div>
       </div>
     <% end %>
