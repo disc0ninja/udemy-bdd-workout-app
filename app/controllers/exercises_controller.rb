@@ -19,7 +19,21 @@ class ExercisesController < ApplicationController
       flash.now[:danger] = "Exercise could not be saved"
       render :new
     end
+  end
 
+  def edit
+    @exercise = @user.exercises.find(params[:id])
+  end
+
+  def update
+    @exercise = @user.exercises.find(params[:id])
+    if @exercise.update(exercise_params)
+      flash[:success] = "Exercise has been updated"
+      redirect_to [@user, @exercise]
+    else
+      flash.now[:danger] = "Exercise has not been updated"
+      render :edit
+    end
   end
 
   def show

@@ -17,6 +17,10 @@
           Duration (Min): <%= exercise.duration_in_min %><br />
           Activity Date: <%= exercise.workout_date %>
         </div>
+        <div class="mdl-card__actions">
+          <%= link_to "Edit", edit_user_exercise_path(@user, exercise), class: "
+          mdl-button mdl-button--raised mdl-js-button mdl-js-ripple-effect" %>
+        </div>
       </div>
     <% end %>
   <% else %>
@@ -28,7 +32,7 @@
         <%= link_to "Create New Exercise", new_user_exercise_path(@user), class: "
         mdl-cell mdl-cell--4-col-desktop mdl-cell--4-offset-desktop mdl-cell--2-offset-tablet
         mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" %>
-      </div>
+      </div
     </div>
   <% end %>
 </div>
