@@ -8,6 +8,30 @@
       <div class="mdl-layout-spacer"></div>
       <!-- Navigation. We hide it in small screens. -->
       <nav class="mdl-navigation mdl-layout--large-screen-only">
+        <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable
+                  mdl-textfield--floating-label mdl-textfield--align-right">
+          <%= form_tag(search_dashboards_path, role: "search") do %>
+
+        <label class="mdl-button mdl-js-button mdl-button--icon"
+               for="search-name">
+          <i class="material-icons">search</i>
+        </label>
+
+
+
+        <div class="mdl-textfield__expandable-holder">
+
+          <%= text_field_tag :search_name, nil, class: "mdl-textfield__input", id: "search-name" %>
+
+
+
+
+          <!-- <input class="mdl-textfield__input" type="text" name="sample"
+                 id="search-name"> -->
+        </div>
+          <%= submit_tag "Search", class: "mdl-navigation__link", id: "search" %>
+        <% end %>
+      </div>
         <%= link_to "Home", root_path, id: "nav-bar-home", class: "mdl-navigation__link" %>
         <%= link_to "Athletes Den", root_path, id: "nav-bar-athletes-den", class: "mdl-navigation__link" %>
         <% if user_signed_in? %>

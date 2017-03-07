@@ -1,0 +1,8 @@
+<% @athletes.each do |athlete| %>
+
+  <%= athlete.full_name %>
+
+<% end %>
+
+<%= page_entries_info @athletes %>
+<%= will_paginate @athletes %>
