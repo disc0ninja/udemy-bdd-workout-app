@@ -3,7 +3,7 @@ require "rails_helper"
 RSpec.feature "A user signs in" do
 
   before do
-    @john = User.create(email: "john@example.com", password: "password")
+    @john = User.create(first_name: "John", last_name: "Doe", email: "john@example.com", password: "password")
   end
 
   scenario "Successfully with nav bar links" do

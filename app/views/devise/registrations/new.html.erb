@@ -24,6 +24,26 @@
       mdl-cell--1-offset-tablet mdl-cell--6-col-tablet
       mdl-cell--6-col-phone
       mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+      <%= f.label :first_name, class: "mdl-textfield__label", for: "registration-first-name" %><br />
+      <%= f.text_field :first_name, id: "registration-first-name", class: "mdl-textfield__input", autocomplete: "off" %>
+    </div>
+  </div>
+
+  <div class="mdl-grid">
+    <div class="mdl-cell mdl-cell--2-offset-desktop mdl-cell--8-col-desktop
+      mdl-cell--1-offset-tablet mdl-cell--6-col-tablet
+      mdl-cell--6-col-phone
+      mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+      <%= f.label :last_name, class: "mdl-textfield__label", for: "registration-last-name" %><br />
+      <%= f.text_field :last_name, id: "registration-last-name", class: "mdl-textfield__input", autocomplete: "off" %>
+    </div>
+  </div>
+
+  <div class="mdl-grid">
+    <div class="mdl-cell mdl-cell--2-offset-desktop mdl-cell--8-col-desktop
+      mdl-cell--1-offset-tablet mdl-cell--6-col-tablet
+      mdl-cell--6-col-phone
+      mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
       <%= f.label :password, class: "mdl-textfield__label", for: "registration-password" %><br />
       <% if @minimum_password_length %>
       <em>(<%= @minimum_password_length %> characters minimum)</em>

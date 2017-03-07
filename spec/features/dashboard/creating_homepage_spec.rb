@@ -3,7 +3,7 @@ require "rails_helper"
 RSpec.feature "Home Page" do
 
   before do
-    @john = User.create(email: "john@example.com", password: "password")
+    @john = User.create(first_name: "John", last_name: "Doe", email: "john@example.com", password: "password")
   end
 
   scenario "A non logged in user visits the home page" do
@@ -31,7 +31,7 @@ RSpec.feature "Home Page" do
 
   scenario "A logged in user visits the home page" do
     login_as(@john)
-    
+
     visit "/"
 
     expect(page).to have_link "nav-bar-home"
