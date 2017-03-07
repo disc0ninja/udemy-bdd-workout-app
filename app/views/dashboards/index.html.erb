@@ -14,15 +14,22 @@
     <div class="mdl-card__title">
       <h3 class="mdl-card__title-text">List of Members</h3>
     </div>
-    <% @athletes.each do |athlete| %>
-      <div class="mdl-card mdl-shadow--2dp">
-        <div class="mdl-card__title">
-          <h5 class="mdl-car__title-text">
-          <%=  athlete.full_name %>
-          </h5>
-        </div>
-      </div>
-    <% end %>
+    <div class="mdl-card__supporting-text">
+      <ul class="mdl-list">
+        <% @athletes.each do |athlete| %>
+          <li class="mdl-list__item">
+            <span class="mdl-list__item-primary-content">
+              <i class="material-icons mdl-list__item-icon">person</i>
+              <%=  athlete.full_name %>
+            </span>
+          </li>
+        <% end %>
+      </ul>
+    </div>
+    <div class="mdl-card__actions">
+      <%= page_entries_info @athletes %>
+      <%= will_paginate @athletes %>
+    </div>
   </div>
 
   </div>

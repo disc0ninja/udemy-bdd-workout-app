@@ -42,6 +42,9 @@ gem 'jquery-ui-rails', '5.0.5'
 # used to help visualize ecercise database
 gem 'd3-rails', '4.1.0'
 
+# pagination
+gem 'will_paginate', '~> 3.1.0'
+
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
