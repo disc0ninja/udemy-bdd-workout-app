@@ -21,6 +21,12 @@
             <span class="mdl-list__item-primary-content">
               <i class="material-icons mdl-list__item-icon">person</i>
               <%=  athlete.full_name %>
+              <% if user_signed_in? %>
+                <% unless current_user.follows_or_same?(athlete) %>
+                  <%= link_to "Follow", friendships_path(friend_id: athlete.id),
+                    method: :post, class: "button", id:"#{athlete}-follow" %>
+                <% end %>
+              <% end %>
             </span>
           </li>
         <% end %>
