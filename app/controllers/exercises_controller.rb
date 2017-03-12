@@ -4,6 +4,7 @@ class ExercisesController < ApplicationController
 
   def index
     @exercises = @user.exercises
+    @friends = @user.friends
   end
 
   def new

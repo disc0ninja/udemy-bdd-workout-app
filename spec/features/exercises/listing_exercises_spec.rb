@@ -98,7 +98,7 @@ RSpec.feature "Listing Exercises" do
 
     expect(page).to have_content("My Friends")
     expect(page).to have_link(@sarah.full_name)
-    expect(page).to have_link("unfollow#{@sarah}")
+    expect(page).to have_link("Unfollow")
 
   end
 

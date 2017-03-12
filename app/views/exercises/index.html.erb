@@ -40,3 +40,13 @@
   <% end %>
 </div>
 <%= content_tag :div, "", id: "chart", data: { workouts: @exercises } %>
+
+<div class="mdl-grid">
+  <div class="mdl-cell mdl-cell--4-col">
+    <h1>My Friends</h1>
+    <% @friends.each do |friend| %>
+      <%= link_to friend.full_name, friendship_path(current_user.current_friendship(friend)) %>
+      <%= link_to "Unfollow", friendship_path(current_user.current_friendship(friend)), method: :delete, data: {confirm: "Are you sure?"} %>
+    <% end %>
+  </div>
+</div>
