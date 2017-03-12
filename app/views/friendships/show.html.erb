@@ -1,0 +1,24 @@
+<div class="mdl-grid">
+  <div class="mdl-cell mdl-cell--6-col mdl-cell--3-offset-desktop mdl-shadow--3dp">
+    <h3><%= @friend.full_name %>'s Exercises</h3>
+  </div>
+</div>
+<div class="mdl-grid">
+  <% @exercises.each do |exercise| %>
+    <div class="mdl-cell mdl-cell--4-col mdl-card mdl-shadow--3dp">
+      <div class="mdl-card__title">
+        <h5 class="mdl-card__title-text">
+          <%= exercise.workout %>
+        </h5>
+      </div>
+      <div class="mdl-card__supporting-text">
+        Duration (Min): <%= exercise.duration_in_min %><br />
+        Activity Date: <%= exercise.workout_date %>
+      </div>
+    </div>
+  <% end %>
+</div>
+<%= content_tag :div, "", id: "chart", data: { workouts: @exercises } %>
+
+<br />
+<%= link_to "Back", user_exercise_path(current_user) %>

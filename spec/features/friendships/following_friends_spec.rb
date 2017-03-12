@@ -3,7 +3,6 @@ require "rails_helper"
 RSpec.feature "Following Friends:" do
 
   before do
-    User.delete_all
     @john = User.create(first_name: "John", last_name: "Doe", email: "john@example.com", password: "password")
 
     @peter = User.create(first_name: "Peter", last_name: "Parker", email: "spidey@example.com", password: "password")
