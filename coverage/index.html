@@ -14,27 +14,27 @@
       <img src="./assets/0.10.0/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2017-03-11T20:26:40-06:00">2017-03-11T20:26:40-06:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2017-03-11T20:42:11-06:00">2017-03-11T20:42:11-06:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
         <div class="file_list_container" id="AllFiles">
   <h2>
     <span class="group_name">All Files</span>
-    (<span class="covered_percent"><span class="green">98.67%</span></span>
+    (<span class="covered_percent"><span class="green">99.51%</span></span>
      covered at
      <span class="covered_strength">
        <span class="green">
-         1.92
+         1.96
        </span>
     </span> hits/line)
   </h2>
   <a name="AllFiles"></a>
   <div>
-    <b>40</b> files in total.
-    <b>601</b> relevant lines. 
-    <span class="green"><b>593</b> lines covered</span> and
-    <span class="red"><b>8</b> lines missed </span>
+    <b>41</b> files in total.
+    <b>613</b> relevant lines. 
+    <span class="green"><b>610</b> lines covered</span> and
+    <span class="red"><b>3</b> lines missed </span>
   </div>
   <table class="file_list">
     <thead>
@@ -67,7 +67,7 @@
         <td>5</td>
         <td>5</td>
         <td>0</td>
-        <td>10.0</td>
+        <td>10.2</td>
       </tr>
       
       <tr>
@@ -77,17 +77,17 @@
         <td>34</td>
         <td>34</td>
         <td>0</td>
-        <td>4.4</td>
+        <td>4.6</td>
       </tr>
       
       <tr>
         <td class="strong"><a href="#6a3082dfeda3605cffeee07853487e203a139d1f" class="src_link" title="app/controllers/friendships_controller.rb">app/controllers/friendships_controller.rb</a></td>
-        <td class="red strong">70.0 %</td>
+        <td class="green strong">95.0 %</td>
         <td>35</td>
         <td>20</td>
-        <td>14</td>
-        <td>6</td>
-        <td>0.7</td>
+        <td>19</td>
+        <td>1</td>
+        <td>1.0</td>
       </tr>
       
       <tr>
@@ -137,7 +137,7 @@
         <td>6</td>
         <td>6</td>
         <td>0</td>
-        <td>32.7</td>
+        <td>34.0</td>
       </tr>
       
       <tr>
@@ -157,7 +157,7 @@
         <td>19</td>
         <td>18</td>
         <td>1</td>
-        <td>7.3</td>
+        <td>7.8</td>
       </tr>
       
       <tr>
@@ -411,6 +411,16 @@
       </tr>
       
       <tr>
+        <td class="strong"><a href="#8fda060043bdcdac0fbd8f015239cce77007495b" class="src_link" title="spec/features/friendships/unfollowing_friend_spec.rb">spec/features/friendships/unfollowing_friend_spec.rb</a></td>
+        <td class="green strong">100.0 %</td>
+        <td>24</td>
+        <td>12</td>
+        <td>12</td>
+        <td>0</td>
+        <td>1.0</td>
+      </tr>
+      
+      <tr>
         <td class="strong"><a href="#c9060d8b03b42b1c0629970ea0be975a5904f6f4" class="src_link" title="spec/features/users/user_logs_out_spec.rb">spec/features/users/user_logs_out_spec.rb</a></td>
         <td class="green strong">100.0 %</td>
         <td>34</td>
@@ -534,8 +544,8 @@
           <code class="ruby">  def index</code>
         </li>
       
-        <li class="covered" data-hits="46" data-linenumber="4">
-          <span class="hits">46</span>
+        <li class="covered" data-hits="47" data-linenumber="4">
+          <span class="hits">47</span>
           
           <code class="ruby">    @athletes = User.paginate(:page =&gt; params[:page])</code>
         </li>
@@ -630,14 +640,14 @@
           <code class="ruby">  def index</code>
         </li>
       
-        <li class="covered" data-hits="18" data-linenumber="6">
-          <span class="hits">18</span>
+        <li class="covered" data-hits="20" data-linenumber="6">
+          <span class="hits">20</span>
           
           <code class="ruby">    @exercises = @user.exercises</code>
         </li>
       
-        <li class="covered" data-hits="18" data-linenumber="7">
-          <span class="hits">18</span>
+        <li class="covered" data-hits="20" data-linenumber="7">
+          <span class="hits">20</span>
           
           <code class="ruby">    @friends = @user.friends</code>
         </li>
@@ -930,8 +940,8 @@
           <code class="ruby">  def set_user</code>
         </li>
       
-        <li class="covered" data-hits="40" data-linenumber="56">
-          <span class="hits">40</span>
+        <li class="covered" data-hits="42" data-linenumber="56">
+          <span class="hits">42</span>
           
           <code class="ruby">    @user = current_user</code>
         </li>
@@ -985,11 +995,11 @@
         <div class="source_table" id="6a3082dfeda3605cffeee07853487e203a139d1f">
   <div class="header">
     <h3>app/controllers/friendships_controller.rb</h3>
-    <h4><span class="red">70.0 %</span> covered</h4>
+    <h4><span class="green">95.0 %</span> covered</h4>
     <div>
       <b>20</b> relevant lines. 
-      <span class="green"><b>14</b> lines covered</span> and
-      <span class="red"><b>6</b> lines missed.</span>
+      <span class="green"><b>19</b> lines covered</span> and
+      <span class="red"><b>1</b> lines missed.</span>
     </div>
   </div>
   
@@ -1104,26 +1114,26 @@
           <code class="ruby">  def destroy</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="19">
-          
+        <li class="covered" data-hits="1" data-linenumber="19">
+          <span class="hits">1</span>
           
           <code class="ruby">    @friendship = Friendship.find(params[:id])</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="20">
-          
+        <li class="covered" data-hits="1" data-linenumber="20">
+          <span class="hits">1</span>
           
           <code class="ruby">    friend_name = @friendship.friend.full_name</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="21">
-          
+        <li class="covered" data-hits="1" data-linenumber="21">
+          <span class="hits">1</span>
           
           <code class="ruby">    if @friendship.destroy</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="22">
-          
+        <li class="covered" data-hits="1" data-linenumber="22">
+          <span class="hits">1</span>
           
           <code class="ruby">      flash[:success] = &quot;#{friend_name} unfollowed&quot;</code>
         </li>
@@ -1146,8 +1156,8 @@
           <code class="ruby">    end</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="26">
-          
+        <li class="covered" data-hits="1" data-linenumber="26">
+          <span class="hits">1</span>
           
           <code class="ruby">    redirect_to user_exercises_path(current_user)</code>
         </li>
@@ -1614,8 +1624,8 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="191" data-linenumber="8">
-          <span class="hits">191</span>
+        <li class="covered" data-hits="199" data-linenumber="8">
+          <span class="hits">199</span>
           
           <code class="ruby">  default_scope { where(&#39;workout_date &gt; ?&#39;, 7.days.ago) .order(workout_date: :desc) }</code>
         </li>
@@ -1854,8 +1864,8 @@
           <code class="ruby">  def full_name</code>
         </li>
       
-        <li class="covered" data-hits="76" data-linenumber="29">
-          <span class="hits">76</span>
+        <li class="covered" data-hits="81" data-linenumber="29">
+          <span class="hits">81</span>
           
           <code class="ruby">    [first_name, last_name].join(&quot; &quot;)</code>
         </li>
@@ -1884,8 +1894,8 @@
           <code class="ruby">  def follows_or_same?(new_friend)</code>
         </li>
       
-        <li class="covered" data-hits="36" data-linenumber="34">
-          <span class="hits">36</span>
+        <li class="covered" data-hits="38" data-linenumber="34">
+          <span class="hits">38</span>
           
           <code class="ruby">    friendships.map(&amp;:friend).include?(new_friend)</code>
         </li>
@@ -1908,8 +1918,8 @@
           <code class="ruby">  def current_friendship(friend)</code>
         </li>
       
-        <li class="covered" data-hits="12" data-linenumber="38">
-          <span class="hits">12</span>
+        <li class="covered" data-hits="14" data-linenumber="38">
+          <span class="hits">14</span>
           
           <code class="ruby">    friendships.where(friend: friend).first</code>
         </li>
@@ -7939,6 +7949,168 @@
         </li>
       
         <li class="never" data-hits="" data-linenumber="31">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+    </ol>
+  </pre>
+</div>
+      
+        <div class="source_table" id="8fda060043bdcdac0fbd8f015239cce77007495b">
+  <div class="header">
+    <h3>spec/features/friendships/unfollowing_friend_spec.rb</h3>
+    <h4><span class="green">100.0 %</span> covered</h4>
+    <div>
+      <b>12</b> relevant lines. 
+      <span class="green"><b>12</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
+    </div>
+  </div>
+  
+  <pre>
+    <ol>
+      
+        <li class="covered" data-hits="1" data-linenumber="1">
+          <span class="hits">1</span>
+          
+          <code class="ruby">require &quot;rails_helper&quot;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="2">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="3">
+          <span class="hits">1</span>
+          
+          <code class="ruby">RSpec.feature &quot;Unfollow Friend&quot; do</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="4">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="5">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  before do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="6">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    @john = User.create(first_name: &quot;John&quot;, last_name: &quot;Doe&quot;, email: &quot;john@example.com&quot;, password: &quot;password&quot;)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="7">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="8">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    @peter = User.create(first_name: &quot;Peter&quot;, last_name: &quot;Parker&quot;, email: &quot;spidey@example.com&quot;, password: &quot;password&quot;)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="9">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="10">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    login_as(@john)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="11">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="12">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    @following = Friendship.create(user: @john, friend: @peter)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="13">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="14">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="15">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  scenario &quot;Successfully&quot; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="16">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    visit &quot;/&quot;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="17">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="18">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    click_link &quot;nav-bar-lounge&quot;</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="19">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    click_link &quot;unfollow-#{@peter.first_name}-#{@peter.last_name}&quot;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="20">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="21">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    expect(page).to have_content(/#{@peter.full_name} unfollowed/i)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="22">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="23">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="24">
           
           
           <code class="ruby">end</code>
