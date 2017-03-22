@@ -42,6 +42,21 @@
 <%= content_tag :div, "", id: "chart", data: { workouts: @exercises } %>
 
 <div class="mdl-grid">
+  <div class="mdl-cell mdl-cell--4">
+    <header>
+      <%= current_room.name %>
+    </header>
+    <div>
+      <%= form_for @message do |msg| %>
+        <%= msg.text_field :body, id: 'message-field' %>
+        <%= msg.submit 'Post', id: 'post-button' %>
+      <% end %>
+
+    </div>
+  </div>
+</div>
+
+<div class="mdl-grid">
   <div class="mdl-cell mdl-cell--4-col">
     <h1>My Friends</h1>
     <% @friends.each do |friend| %>
