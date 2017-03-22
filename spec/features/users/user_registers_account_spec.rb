@@ -16,6 +16,13 @@ RSpec.feature "A user registers for a new account" do
     click_button "Register"
 
     expect(page).to have_content("Welcome! you have registered successfully.")
+
+    user = User.last
+    room = user.room
+    room_name = user.full_name.split.join('-')
+
+    expect(room.name).to eq(room_name)
+
   end
 
   scenario "A user fails to register with: an empty email with nav bar links" do
